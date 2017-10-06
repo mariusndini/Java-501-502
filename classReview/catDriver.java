@@ -1,5 +1,5 @@
 public class catDriver{
-   public static void main (String[] args){
+   public static void main (String[] args){      
       int age = 2;
       String catName = "Catty"; 
       cat myCat = new cat(age, catName);
