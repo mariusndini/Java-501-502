@@ -120,8 +120,13 @@ public class cat{
          System.out.println(allCatslist[i].getName());
       }//end for
    }
+   
+   public cat test(){
+      return new cat(3,"Test Cat");
+   }
 
 
+   
 }//end cat
 
 

@@ -1,0 +1,16 @@
+public class cat extends Animal{
+   cat(String name, String says){
+      super(name, says);
+   }
+      
+   // METHOD OVERLOADING
+   // we can still have the old method and the new method
+   // but the paramater list has to be different
+   public void speak(int numberOfTimes){
+      for(int i = 0; i < numberOfTimes; i = i + 1){
+         super.speak();
+      }
+   }//end speak  
+ 
+ 
+}//end cat
