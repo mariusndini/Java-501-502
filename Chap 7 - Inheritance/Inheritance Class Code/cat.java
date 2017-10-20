@@ -1,6 +1,6 @@
 public class cat extends Animal{
-   cat(String name, String says){
-      super(name, says);
+   cat(String name){
+      super(name, "Meow");
    }
       
    // METHOD OVERLOADING

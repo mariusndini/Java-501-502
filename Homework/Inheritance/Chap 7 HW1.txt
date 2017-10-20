@@ -1,0 +1,83 @@
+CSC - 502
+Homework 1 - Inheritance
+Due Date : Oct 26 2017 ( NO Late Submissions, I will be posting answers for you to check)
+
+Instructions:
+	EVERY file needs comments at the top which has the following information
+	Name: Your Name
+	Class: Class Name, what your class does
+	Output: Every class NEEDS a driver and every method in the class needs to be tested
+		IF your driver has output it NEEDS to be here!
+
+	Driver: EVERY Class NEEDS a driver. Every driver needs to test every method (Every public method) in your class.
+	Comments: This is the only optional field. Comments on anything you feel I should know. 
+		Difficulties, challenges, things you liked, things you hated, anything etc. 
+
+HomeWork Instructions:
+
+	1) Complete the Animal, Dog and Cat class. 
+	   These classes do not have Setters, Getters, toString or Equals Methods. 
+	   		Fill in the gaps in these classes and write the above methods. 
+
+	2) Complete the PitBull class with all the needed Methods. 
+		Override the speak method to have the Pitbull speak 3 times instead of once. 
+
+	3) Create Giraffe class which inherits from the Animal class. 
+		This class will have an instance variable called neckHeight.
+		Have all neccessary methods for class.
+		Giraffes voice frequency is too low for human ears. Override this method that just prints a blank statement. 
+
+	4) Write drivers for all the classes created above (This will be how I check your HW). Make sure to test all of your methods in the driver. 
+
+
+
+
+    - EMPLOYEE CLASS - ** The homework below is meant to be a bit more challenging, but the answers are also in your book **
+     You are given the Employee class in Git (Please take a look and make sure you understand the class)
+    	* This class also references the Date class for easy date recording * make sure to look and understand this class as well
+
+    1) Before starting anything write a driver for the Date class
+    	1a) Also write a driver for the employee class
+
+    2) Create a HourlyEmployee class which inherits from the Employee class. 
+    	This class has two instance variables called 
+    		wageRate of type Double 
+    		hours of type double
+
+    	Create all constructors, setters, getters, toString and equals methods for HourlyEmployee class
+
+    	*Do error checking. Check if the hours are below zero (this is not allowed) or if the wage is below 7.50 (we have a min age here). and any other checks you think are important.
+
+    3) Create a SalariedEmployee Class which inherits from the Employee class
+    	this class has one instance var
+    		salary of type double
+
+    	Create all constructors, setters, getters, toString and equals methods for HourlyEmployee class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-public class PitBull extends dog{
+public class PitBull extends Dog{
 
 
 }
