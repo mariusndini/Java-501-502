@@ -1,3 +1,4 @@
+
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
@@ -16,13 +17,12 @@ public class TextFileOutputDemo{
 
         System.out.println("Writing to file.");
 
-        outputStream.println("The quick brown fox round two");
+        outputStream.println("<h1 style='background-color:blue'>This is HTML code</h1>");
         outputStream.println("jumped over the lazy dog.");
 
         outputStream.close( ); // This is when everything is saved.
 
         System.out.println("End of program.");
-        
         
         
         
