@@ -12,7 +12,7 @@ public class Employee
     public Employee( )
     {
          name = "No name";
-         hireDate = new Date("Jan", 1, 1000); //Just a placeholder.
+         hireDate = new Date("January", 1, 1000); //Just a placeholder.
     }
 
     /**
@@ -29,6 +29,7 @@ public class Employee
         hireDate = new Date(theDate);
     }
 
+    //copy constructor
     public Employee(Employee originalObject)
     {
          name = originalObject.name;

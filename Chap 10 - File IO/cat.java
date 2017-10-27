@@ -12,9 +12,10 @@ public class cat extends Animal{
       }
    }//end speak  
  
+   //method save overriden
    public void save(){
-      DB.write("Type:"+getClass().getName() +"-"+"Name:"+name +"-"+"Says:"+"Meow");
-      DB.close();
+      super.DB.write("cat" +"-"+name +"-"+"Meow");
+      super.DB.close();
    }
   
  

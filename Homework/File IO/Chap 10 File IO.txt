@@ -1,0 +1,74 @@
+CSC - 502
+Homework 1 - File IO
+Due Date : Nov 02 2017 ( NO Late Submissions, I will be posting answers for you to check)
+
+Instructions:
+	EVERY file needs comments at the top which has the following information
+	Name: Your Name
+	Class: Class Name, what your class does
+	Output: Every class NEEDS a driver and every method in the class needs to be tested
+		IF your driver has output it NEEDS to be here!
+
+	Driver: EVERY Class NEEDS a driver. Every driver needs to test every method (Every public method) in your class.
+	Comments: This is the only optional field. Comments on anything you feel I should know. 
+		Difficulties, challenges, things you liked, things you hated, anything etc. 
+
+HomeWork Instructions:
+
+	1) Referencing 'TextFileInputDemo' java class write a class called 'myFileInput' which reads the five lines from 'myDataFile.txt' and print them to the screen.
+	2) Referencing 'TextFileOutputDemo' java class write a class called 'myFileOutput' which will write the following five lines to a file named '<yourName>OutputFile.txt'
+		Philadelphia,44,rain
+		Springfield,45,rain
+		Tirana,56,sunny
+		Amsterdam,57,cloudy
+		Nice,60,sunny
+
+	3) create a java class called 'Weather.java'
+		a) This class will have 3 instance variables
+			City - is a String
+			Temp - is an int
+			weather - is a String
+		b) create all constructors, setters, getters, toString etc for this class
+
+	4)  Write a driver called 'myWeatherDriver.java' and read your '<yourName>OutputFile.txt' file. 
+		This driver will have an array called 'myWeatherData' which takes the type 'Weather'
+		a) Read each line in a loop (in your example you will have 5 lines, I will test with a file with 10 lines). 
+		b) after reading each line split each line into 3 respective columns using the split method. 
+			https://www.javatpoint.com/java-string-split. <- a decent reference for split
+			* NOTE: when you split you will need an array to store these values (This is a different array then myWeatherData). 
+				Array[0] = city.   
+				Array[1] = Temp
+				Array[2] = weather
+		c) After you split the data. Take these values and create a respective weather object using the weather class with these values
+			    store these classes in the myWeatherData array
+	    d) write another loop (for loop) and loop through the myWeatherData array.
+	    	print each Weather's toString in the loop. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

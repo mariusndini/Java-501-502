@@ -14,7 +14,7 @@ public class Animal extends Object{
    }
    
    public void save(){
-      DB.write("Type:Animal-"+"Name:"+name +"-"+"Says:"+says);
+      DB.write("Animal-"+""+name +"-"+says);
       DB.close();
    }   
    

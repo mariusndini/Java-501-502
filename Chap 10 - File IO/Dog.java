@@ -11,13 +11,17 @@ public class Dog extends Animal{
    }
    
    public void save(){
-      DB.write("Type:Dog-"+"Name:"+name +"-"+"Says:"+"woof-Age:"+age);
+      DB.write("Dog-"+name +"-"+age+"-"+says);
       DB.close();
    }
 
    
    int getAge(){
       return age;
+   }
+   
+   String getName(){
+      return name;
    }
    
    // Method Overriding

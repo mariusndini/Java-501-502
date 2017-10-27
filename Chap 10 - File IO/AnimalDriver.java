@@ -12,6 +12,11 @@ public class AnimalDriver{
       //setting up our reader
       OurDBReader reader = new OurDBReader("AnimalsDB.txt");      
       
+      Dog ourDogs[] = new Dog[10];
+      cat ourCats[] = new cat[10];
+      int dogCounter = 0;
+      int catCounter = 0;
+      
       //this is our initial first line
       String line = reader.read();
       while(!line.equals("")){
@@ -20,49 +25,37 @@ public class AnimalDriver{
          
          //split the line in an array so we can get the values
          String ourLineSplit[] = line.split("-");
+         
+         if(ourLineSplit[0].equals("Dog")){
+            System.out.println("This is a dog "+ ourLineSplit[1]);
+            int ourDogsAge = Integer.parseInt(ourLineSplit[2]); 
+            Dog ourNewDog = new Dog(ourLineSplit[1], ourDogsAge);
+            
+            ourNewDog.speak();
+            //put dog in the array
+            ourDogs[dogCounter] = ourNewDog;
+            dogCounter = dogCounter + 1;
+            
+         }else if(ourLineSplit[0].equalsIgnoreCase("cat")){
+            System.out.println("This is a cat " + ourLineSplit[1]);
+         }  
 
-         if(ourLineSplit[0].split(":")[1].equalsIgnoreCase("Dog")){
-            Dog myDogMan = new Dog(ourLineSplit[1].split(":")[1], 
-                                       Integer.parseInt(ourLineSplit[3].split(":")[1]));
-            
-            System.out.println(myDogMan.toString());
-            
-            
-         }
-         
-         
-        
-        
          //read the next line, should alwys be last logic in our loop
          line = reader.read();
         
       }
       
-      /*
-      String line1 = reader.read();
-      String line2 = reader.read();
+      
+      System.out.println("===============================");
+      for(int i = 0; i < dogCounter; i++){
+         System.out.println("Intro themselves");
+         System.out.println(ourDogs[i].getName()+" "+ourDogs[i].getAge());
+         ourDogs[i].speak();
+         
+         
+      }
 
-      //converts each line into an Array split by the delimiter (here a comma)
-      String line1Split[] = line1.split("-");
-      String line2Split[] = line2.split("-");
-      
-      //now these need to split into their respective boxes as well
-      System.out.println(line1Split[0]+" "+line1Split[1]+" "+line1Split[2]+" "+line1Split[3]);
-      System.out.println(line2Split[0]+" "+line2Split[1]);
-      
-      System.out.println();//just to have a space
-      System.out.println(line1Split[0].split(":")[1]+" "+
-                         line1Split[1].split(":")[1]+" "+
-                         line1Split[2].split(":")[1]+" "+
-                         line1Split[3].split(":")[1]);
-      
-      
-      System.out.println(line2Split[0].split(":")[1]+" "+
-                         line2Split[1].split(":")[1]);
-      
-      */
-      
-      
+
    }//end main
    
 }//end driver

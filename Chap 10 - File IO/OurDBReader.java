@@ -31,6 +31,8 @@ public class OurDBReader{
          String line = inputStream.readLine();  
          if(line != null){
             return line;
+         }else{
+            return "";
          }
          
       }
