@@ -5,8 +5,7 @@ public class Animal extends Object{
    public Animal (String name, String says){
       this.name = name;
       this.says = says;
-   }
-   
+   }   
    public void speak(){
       System.out.println(says);
    }  
