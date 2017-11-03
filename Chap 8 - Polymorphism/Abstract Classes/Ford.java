@@ -6,13 +6,15 @@
 */
 
 public class Ford extends Vehicle{
-   
+   //constructor
    Ford(){
       super("Ford");
    }
+   
    /*
       We are required to define this method. 
       HOW we define it is up to us
    */
    public void drive(){}
+
 }  

@@ -1,10 +1,10 @@
-public abstract class Food{
+public class Food{
    
    void eat(){
       System.out.println("Ate Food");
    }
    
-   abstract void drink();
+   //void cook(){}
    
    
 }

@@ -30,7 +30,7 @@ public class FoodDriver{
       //     We could be casting it as an object that it is not.
       Food myPasta = new Pasta(); // Pasta is pretending to be Food
       ((Pasta)myPasta).cook(); // Interpreter is not smart enough to know that this is Actually in the pasta class - We Tricked it.
-      ((Food)myPasta).eat(); // Poly Morphism is still going to call pasta eat
+      ((Pasta)myPasta).eat(); // Poly Morphism is still going to call pasta eat
 
 
       // Attempt:

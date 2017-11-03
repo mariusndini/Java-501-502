@@ -1,0 +1,43 @@
+CSC - 502
+Homework 1 - Polymorphism
+Due Date : Nov 09 2017
+
+Instructions:
+	EVERY file needs comments at the top which has the following information
+	Name: Your Name
+	Class: Class Name, what your class does
+	Output: Every class NEEDS a driver and every method in the class needs to be tested
+		IF your driver has output it NEEDS to be here!
+
+	Driver: EVERY Class NEEDS a driver. Every driver needs to test every method (Every public method) in your class.
+	Comments: This is the only optional field. Comments on anything you feel I should know. 
+		Difficulties, challenges, things you liked, things you hated, anything etc. 
+
+HomeWork Instructions:
+	
+	1) Write a program which asks the user the question “How many Numbers would you like to enter” and takes the response. Prompt the user to enter in that many numbers and write these numbers to a file called “numbers.txt”. 
+		- Make sure to handle any exceptions
+	
+	2) Write a polymorphic array for the animal class you completed in HW one. 
+		- Create an array of length 10. 
+		- Fill this array with 1 animal, 2 dogs, 2 cats, 2 pitbulls, and a garaffe.
+		- Iterate through the array and have each animal speak. 
+
+		B) write each animals toString to a file called "animals.txt"
+
+	3) Create another Animal class called "AnimalAbstract.java" and make this class abstract. 
+		- have an abstract method called eat() which takes no parameters.
+
+	** All of the files above should have a driver which tests all the methods/classes above. 
+
+
+
+
+
+
+
+
+
+
+
+
