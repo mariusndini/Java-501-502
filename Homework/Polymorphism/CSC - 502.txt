@@ -26,7 +26,7 @@ HomeWork Instructions:
 		B) write each animals toString to a file called "animals.txt"
 
 	3) Create another Animal class called "AnimalAbstract.java" and make this class abstract. 
-		- have an abstract method called eat() which takes no parameters.
+		- have an abstract method called drink() which takes no parameters.
 
 	** All of the files above should have a driver which tests all the methods/classes above. 
 
