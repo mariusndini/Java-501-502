@@ -23,7 +23,5 @@ public abstract class Vehicle{
       Every child which inherits from Vehicle will NEED to define this class
    */
    public abstract void drive();
-
    
-
 }
