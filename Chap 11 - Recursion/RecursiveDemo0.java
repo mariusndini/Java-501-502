@@ -2,7 +2,7 @@ public class RecursiveDemo0{
 
    // Recursive Method - A method which calls itself
    public static void recurMethod(int arg){
-      if(arg==0){ //termination logic
+      if(arg==0){ //termination logic - base case
          System.out.println("End of the line. GOING UP.");
       }else{ //Recursive statement
          int nextArg = arg - 1;
@@ -17,7 +17,7 @@ public class RecursiveDemo0{
 
 
    public static void main (String[]args){
-      recurMethod(5);
+      recurMethod(50000);
       //extra logic  
    }//end main
    
