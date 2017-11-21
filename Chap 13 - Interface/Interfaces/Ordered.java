@@ -8,7 +8,7 @@
 
 
 public interface Ordered{
-    public boolean precedes(Object other);
-    public boolean follows(Object other); 
+    public Node getPrev();
+    public Node getNext(); 
 }
 

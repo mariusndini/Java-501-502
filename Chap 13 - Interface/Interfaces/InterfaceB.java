@@ -1,4 +1,4 @@
-public interface InterfaceB
+public interface InterfaceB extends InterfaceA
 {
-    public int getStuff();
+    public int getStuff2();
 }
