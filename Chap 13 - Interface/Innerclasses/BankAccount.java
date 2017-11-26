@@ -1,12 +1,11 @@
-public class BankAccount
-{
-    private class Money
-    {
+public class BankAccount{
+
+//-- START MONEY CLASS
+    private class Money{
         private long dollars;
         private int cents;
 
-        public Money(String stringAmount)
-        {
+        public Money(String stringAmount){
             abortOnNull(stringAmount);
             int length = stringAmount.length( );
             dollars = Long.parseLong(
@@ -15,16 +14,14 @@ public class BankAccount
                          stringAmount.substring(length - 2, length));
         }
 
-        public String getAmount( )
-        {
+        public String getAmount( ){
             if (cents > 9)
                return (dollars + "." + cents);
             else
                return (dollars + ".0" + cents);
         }
 
-        public void addIn(Money secondAmount)
-        {
+        public void addIn(Money secondAmount){
             abortOnNull(secondAmount);
             int newCents = (cents + secondAmount.cents)%100;
             long carry = (cents + secondAmount.cents)/100;
@@ -32,35 +29,31 @@ public class BankAccount
             dollars = dollars + secondAmount.dollars + carry;
         }
 
-       private void abortOnNull(Object o)
-       {
-           if (o == null)
-           {
+       private void abortOnNull(Object o){
+           if (o == null){
                 System.out.println("Unexpected null argument.");
                 System.exit(0);
            }
         }
     }
+    
+//-- END MONEY CLASS
 
     private Money balance;
 
-    public BankAccount( )
-    {
+    public BankAccount( ){
         balance = new Money("0.00");
     }
 
-    public String getBalance( )
-    {
+    public String getBalance( ){
         return balance.getAmount( );
     }
 
-    public void makeDeposit(String depositAmount)
-    {
+    public void makeDeposit(String depositAmount){
         balance.addIn(new Money(depositAmount));
     }
 
-    public void closeAccount( )
-    {
+    public void closeAccount( ){
         balance.dollars = 0;
         balance.cents = 0;
     }

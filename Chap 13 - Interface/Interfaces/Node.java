@@ -40,7 +40,8 @@ class driverLink{
       Node _5th = new Node("Amy", _4th);
 
       System.out.println(firstNode.getNext().getPrev().getNext().getNext().name);
-      
    }
+   
+   
 }// End Driver
 
