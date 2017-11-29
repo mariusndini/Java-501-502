@@ -90,12 +90,13 @@ class BlockChain{
       BC.addBlock(b);
       b.data = "Differnet";
    
+      System.out.println(BC);
+
       System.out.println(BC.isChainValid());
       
-      System.out.println(BC);
       
-   }
+   }//end main
    
    
-}
+}//end class
 

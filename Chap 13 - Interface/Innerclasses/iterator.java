@@ -1,6 +1,16 @@
+// https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html 
+//  --more information about the Iterator interface above 
+//    command line java doc 
+//**  javadoc  < MySourceFileName >.java -d <Destination Directory>
+//**  javadoc  iterator.java -d Docs
+//
+// JAVADOC Documentation
+// http://www.oracle.com/technetwork/articles/java/index-137868.html
+// http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html
+
 import java.util.Iterator;
 
-class iterator implements Iterator{
+public class iterator implements Iterator{
 
 //---- START NODE CLASS
    public class Node{
@@ -8,11 +18,21 @@ class iterator implements Iterator{
       
       Node next;
       Node prev;
-      
+
       public Node(String name){
          this.name = name;      
       }// end node constructor
       
+      /**
+       *Constructor
+       *
+       *Construcs the Node
+       *
+       *@param name the name of the node or person
+       *@param prev the previous node in the chain
+       *@return - does not return anything is a constructor
+       *
+      */
       public Node(String name, Node prev){
          this.name = name;
          
@@ -20,7 +40,6 @@ class iterator implements Iterator{
          this.prev = prev; 
       }// end node constructor
      
-      // *Changed the name to next
       public Node next(){
          current = next;
          return next;
@@ -70,16 +89,16 @@ class iterator implements Iterator{
    public iterator(){ /* DEFAULT CONSTRUCTOR */   }
    
    // Implementation Methods
+   // we have to implement next method because of interface
    public Node next(){
       current = current.next;  
       return current;
    }
-   
+ 
    public boolean hasNext(){
       return current.hasNext();
    }
-   // we have to implement next method because of interface
-   
+ 
    // GETTERS ----
    public Node getFirst(){
       return first;
@@ -181,6 +200,8 @@ class driver{
       System.out.println(myNodes);
 
       myNodes.remove(myNodes.get(2));
+      System.out.println(myNodes);
+
       myNodes.addNode("Steve");
       
       System.out.println(myNodes);
