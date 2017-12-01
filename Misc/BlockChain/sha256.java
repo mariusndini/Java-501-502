@@ -20,7 +20,7 @@ public class sha256{
    public static void main(String[] args){
       System.out.println(sha256.getHash("test"));
       System.out.println(sha256.getHash("test"));
-      System.out.println(sha256.getHash("test3"));
+      System.out.println(sha256.getHash("Test"));
       
    }
 

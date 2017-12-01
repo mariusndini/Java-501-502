@@ -1,0 +1,41 @@
+CSC - 502
+Homework 1 - Polymorphism
+Due Date : Dec 9 2017
+
+Instructions:
+	EVERY file needs comments at the top which has the following information
+	Name: Your Name
+	Class: Class Name, what your class does
+	Output: Every class NEEDS a driver and every method in the class needs to be tested
+		IF your driver has output it NEEDS to be here!
+
+	Driver: EVERY Class NEEDS a driver. Every driver needs to test every method (Every public method) in your class.
+	Comments: This is the only optional field. Comments on anything you feel I should know. 
+		Difficulties, challenges, things you liked, things you hated, anything etc. 
+
+HomeWork Instructions:
+	
+	1) Write a simple linked list class with the following instructions/constraints.
+		a) implement the ClassList.java class found in this folder in another class called LinkedList<yourName>. 
+               This class should define the following methods :
+			1) getNext() - which will return the next node in the list.
+			2) getCurrent() - which will return the current node (When a user gets next the current node gets updated)
+			3) toString() - define a toString for these classes
+
+		b) populate the Node class. the node class should have the following instance variables
+         If you need extra methods and vars please put them in. 
+			1) Next() - the next node in the list. 
+         
+		c) this list will only go in one direction (forward).
+
+	2)Have a driver for your list testing all the methods. 
+
+
+
+
+
+
+
+
+
+

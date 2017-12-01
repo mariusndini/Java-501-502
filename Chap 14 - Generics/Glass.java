@@ -11,9 +11,11 @@ class Glass{
       myGlass.liquid = new AppleJuice();
       
       // We are returning an object that MUST be cast to apple juice
-      // -- AppleJuice myJuice = myGlass.liquid; <- Glass.java:13: error: incompatible types: Object cannot be converted to AppleJuice
-      
+      // -- AppleJuice myJuice = myGlass.liquid; <- Glass.java:13: error: 
+      //                   incompatible types: Object cannot be converted to AppleJuice
       AppleJuice myJuice = (AppleJuice)myGlass.liquid;
+      
+      System.out.println(myJuice.type);
       
    }//end main
 
@@ -26,7 +28,7 @@ class Glass{
 */
 
 class AppleJuice{
-   String type = "Apple";
+   public String type = "Apple";
 }
 
 class OrangeJuice{

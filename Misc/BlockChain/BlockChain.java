@@ -1,36 +1,38 @@
 import java.util.*;
 
 
-public class Block{
-   int index;
-   Date date;
-   String data;
-   public String previousHash;
-   public String hash;
-   
-   public Block(int index, Date date, String data, String previousHash){
-      this.index = index;
-      this.date = date;
-      this.data = data;
-      this.previousHash = previousHash;  
 
-   }
+public class BlockChain{
+   class Block{
+      int index;
+      Date date;
+      String data;
+      public String previousHash;
+      public String hash;
+      
+      public Block(int index, Date date, String data, String previousHash){
+         this.index = index;
+         this.date = date;
+         this.data = data;
+         this.previousHash = previousHash;  
    
-   public String calculateHash(){
-      String sha = sha256.getHash(this.index + this.previousHash + this.data + this.date.toString());
-      return sha;
-   }//end calc hash
+      }
+      
+      public String calculateHash(){
+         String sha = sha256.getHash(this.index + this.previousHash + this.data + this.date.toString());
+         return sha;
+      }//end calc hash
+      
+      
+      public String toString(){
+         return index+" "+hash+" " + data+" " + date+" " + previousHash;
+      }
    
-   
-   public String toString(){
-      return index+" "+hash+" " + data+" " + date+" " + previousHash;
-   }
+   }//end class
 
-}//end class
 
-class BlockChain{
+
    ArrayList<Block> chain = new ArrayList<Block>();
-   
    public BlockChain(){
       this.chain.add( createGenesisBlock() );
    }
@@ -81,20 +83,18 @@ class BlockChain{
    
    public static void main (String[] args){
       BlockChain BC = new BlockChain();
+ 
       BC.addBlock(new Block(1, new Date(11, 5, 2017), "Marius", BC.getLatestBlock().hash ));
-            
-      System.out.println(BC.isChainValid());
-
-      Block TomsBlock = new Block(2, new Date(11, 7, 2017), "Tom", BC.getLatestBlock().hash );
-      BC.addBlock(TomsBlock);
-      TomsBlock.date = new Date(11,1,2017);
-      System.out.println(BC.isChainValid());
-
-      
-      BC.addBlock(new Block(3, new Date(11, 5, 2017), "WIll", BC.getLatestBlock().hash ));
-     
-      System.out.println(BC.isChainValid());
       System.out.println(BC);
+
+      //BC.addBlock(new Block(2, new Date(11, 5, 2017), "Tom", BC.getLatestBlock().hash ));
+      //BC.addBlock(new Block(3, new Date(11, 5, 2017), "Will", BC.getLatestBlock().hash ));
+      //BC.addBlock(new Block(4, new Date(11, 5, 2017), "Lucy", BC.getLatestBlock().hash ));
+
+     
+      System.out.println(BC);
+
+      System.out.println(BC.isChainValid());
       
       
    }//end main
